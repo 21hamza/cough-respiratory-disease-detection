@@ -9,8 +9,8 @@ same confound-controlled data, preprocessing, splits and metrics, with hyperpara
 | M1 | MFCC statistics + RBF SVM | Classical baseline | Mohammad Hamza Alam |
 | M2 | 2D-CNN on log-Mel spectrograms (global max pooling) | CNN | Kummarasani Varun |
 | M3 | CNN–LSTM on log-Mel spectrograms | CNN + RNN | Kanwarpal Singh Sachdeva |
-| M4 | Frozen pretrained YAMNet (AudioSet) + BiLSTM head | Transfer learning | _(fill in)_ |
-| – | Data download, preprocessing, dataset build | – | Devesh Gautam |
+| M4 | Frozen pretrained YAMNet (AudioSet) + BiLSTM head | Transfer learning | Devesh Gautam |
+| – | Data download, preprocessing, dataset build |  
 
 ## Results
 
