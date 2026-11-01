@@ -1,0 +1,9 @@
+file,true_status,split,coswara_batch,coswara_participant_id,seconds,sample_rate
+covid_1.wav,positive_mild,test,20210630,DRoZujDy6CWVFL0UefbHEgCcD2l2,3.9,48000
+covid_2.wav,positive_moderate,test,20220116,bEJSKYnh3xVuOaqa9APory8yjr12,6.3,48000
+covid_3.wav,positive_asymp,test,20210507,RvmNXu1ssYaqxW3U5WXnX5aNOVU2,5.8,48000
+covid_4_missed.wav,positive_mild,test,20210426,d6tJkKV7x1TFBe8WNnLhvLuoXgd2,7.8,48000
+healthy_1.wav,healthy,test,20210816,c96Fr87Qw8cbz2JKR4yE6DiuSrq1,3.6,48000
+healthy_2.wav,healthy,test,20210816,mBWfpnNSpAe7cqXYcWhikoYA7SA2,4.4,48000
+healthy_3.wav,healthy,test,20210419,51OnFkHZ12ay7VyGlPkA3AYsB6s2,3.9,48000
+healthy_4_false_alarm.wav,healthy,test,20210714,nx6RCgD0OjdzLa07UHBdHfz54ML2,4.4,16000

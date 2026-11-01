@@ -1,0 +1,27 @@
+{
+ "train": {
+  "healthy": 114,
+  "covid": 115
+ },
+ "val": {
+  "healthy": 25,
+  "covid": 24
+ },
+ "test": {
+  "healthy": 25,
+  "covid": 25
+ },
+ "total": 328,
+ "status_counts": {
+  "healthy": 164,
+  "positive_mild": 97,
+  "positive_moderate": 39,
+  "positive_asymp": 28
+ },
+ "median_duration_s": 5.76,
+ "mel_shape": [
+  328,
+  128,
+  401
+ ]
+}

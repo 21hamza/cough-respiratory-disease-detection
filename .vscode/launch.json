@@ -1,0 +1,40 @@
+{
+    // Run and Debug (Ctrl+Shift+D): pick a configuration and press F5.
+    // Every configuration runs from the project root with the project's Python interpreter.
+    "version": "0.2.0",
+    "configurations": [
+        { "name": "Full pipeline (all stages, ~2.5 h)", "type": "debugpy", "request": "launch",
+          "program": "${workspaceFolder}/main.py", "cwd": "${workspaceFolder}", "console": "integratedTerminal", "justMyCode": true },
+
+        { "name": "1. Download Coswara data", "type": "debugpy", "request": "launch",
+          "program": "${workspaceFolder}/main.py", "args": ["--stage", "download"], "cwd": "${workspaceFolder}", "console": "integratedTerminal" },
+        { "name": "2. Build dataset + features", "type": "debugpy", "request": "launch",
+          "program": "${workspaceFolder}/main.py", "args": ["--stage", "dataset"], "cwd": "${workspaceFolder}", "console": "integratedTerminal" },
+        { "name": "3. Extract YAMNet embeddings (M4)", "type": "debugpy", "request": "launch",
+          "program": "${workspaceFolder}/main.py", "args": ["--stage", "yamnet"], "cwd": "${workspaceFolder}", "console": "integratedTerminal" },
+        { "name": "4. Tune: nested 5-fold CV (all models)", "type": "debugpy", "request": "launch",
+          "program": "${workspaceFolder}/main.py", "args": ["--stage", "tune"], "cwd": "${workspaceFolder}", "console": "integratedTerminal" },
+        { "name": "5. Train + test all models (fixed split)", "type": "debugpy", "request": "launch",
+          "program": "${workspaceFolder}/main.py", "args": ["--stage", "train"], "cwd": "${workspaceFolder}", "console": "integratedTerminal" },
+        { "name": "6. Error analysis", "type": "debugpy", "request": "launch",
+          "program": "${workspaceFolder}/main.py", "args": ["--stage", "analyse"], "cwd": "${workspaceFolder}", "console": "integratedTerminal" },
+        { "name": "7. Noise robustness", "type": "debugpy", "request": "launch",
+          "program": "${workspaceFolder}/main.py", "args": ["--stage", "robust"], "cwd": "${workspaceFolder}", "console": "integratedTerminal" },
+        { "name": "8. Tables + figures", "type": "debugpy", "request": "launch",
+          "program": "${workspaceFolder}/main.py", "args": ["--stage", "figures"], "cwd": "${workspaceFolder}", "console": "integratedTerminal" },
+
+        { "name": "Train M1 MFCC + SVM", "type": "debugpy", "request": "launch",
+          "program": "${workspaceFolder}/main.py", "args": ["--stage", "train", "--models", "m1"], "cwd": "${workspaceFolder}", "console": "integratedTerminal" },
+        { "name": "Train M2 2D-CNN", "type": "debugpy", "request": "launch",
+          "program": "${workspaceFolder}/main.py", "args": ["--stage", "train", "--models", "m2"], "cwd": "${workspaceFolder}", "console": "integratedTerminal" },
+        { "name": "Train M3 CNN-LSTM", "type": "debugpy", "request": "launch",
+          "program": "${workspaceFolder}/main.py", "args": ["--stage", "train", "--models", "m3"], "cwd": "${workspaceFolder}", "console": "integratedTerminal" },
+        { "name": "Train M4 YAMNet + BiLSTM", "type": "debugpy", "request": "launch",
+          "program": "${workspaceFolder}/main.py", "args": ["--stage", "train", "--models", "m4"], "cwd": "${workspaceFolder}", "console": "integratedTerminal" },
+
+        { "name": "Classify test recordings (predict.py)", "type": "debugpy", "request": "launch",
+          "program": "${workspaceFolder}/predict.py",
+          "args": ["samples/covid_1.wav", "samples/covid_4_missed.wav", "samples/healthy_1.wav", "samples/healthy_4_false_alarm.wav"],
+          "cwd": "${workspaceFolder}", "console": "integratedTerminal" }
+    ]
+}

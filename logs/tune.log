@@ -1,0 +1,25 @@
+M1 MFCC + SVM [C=0.1, gamma=scale]  inner-val AUC 0.395  test AUC 0.463
+M1 MFCC + SVM [C=0.1, gamma=0.001]  inner-val AUC 0.413  test AUC 0.390
+M1 MFCC + SVM [C=0.1, gamma=0.01]  inner-val AUC 0.408  test AUC 0.465
+M1 MFCC + SVM [C=1.0, gamma=scale]  inner-val AUC 0.613  test AUC 0.628
+M1 MFCC + SVM [C=1.0, gamma=0.001]  inner-val AUC 0.598  test AUC 0.534
+M1 MFCC + SVM [C=1.0, gamma=0.01]  inner-val AUC 0.606  test AUC 0.625
+M1 MFCC + SVM [C=10.0, gamma=scale]  inner-val AUC 0.615  test AUC 0.637
+M1 MFCC + SVM [C=10.0, gamma=0.001]  inner-val AUC 0.619  test AUC 0.605
+M1 MFCC + SVM [C=10.0, gamma=0.01]  inner-val AUC 0.613  test AUC 0.641
+==> M1 MFCC + SVM selected [C=10.0, gamma=0.001]: AUC 0.60 +/- 0.06
+M2 2D-CNN [avg pooling, lr=0.001]  inner-val AUC 0.587  test AUC 0.491
+M2 2D-CNN [max pooling, lr=0.001]  inner-val AUC 0.573  test AUC 0.508
+M2 2D-CNN [max pooling, lr=0.0003]  inner-val AUC 0.519  test AUC 0.505
+==> M2 2D-CNN selected [avg pooling, lr=0.001]: AUC 0.49 +/- 0.05
+M3 CNN–LSTM [lr=0.001, SpecAugment=off]  inner-val AUC 0.705  test AUC 0.561
+M3 CNN–LSTM [lr=0.0003, SpecAugment=off]  inner-val AUC 0.682  test AUC 0.574
+M3 CNN–LSTM [lr=0.0003, SpecAugment=on]  inner-val AUC 0.664  test AUC 0.523
+==> M3 CNN–LSTM selected [lr=0.001, SpecAugment=off]: AUC 0.56 +/- 0.07
+M4 YAMNet + BiLSTM [bilstm head, lr=0.001]  inner-val AUC 0.602  test AUC 0.555
+M4 YAMNet + BiLSTM [bilstm head, lr=0.0003]  inner-val AUC 0.587  test AUC 0.547
+M4 YAMNet + BiLSTM [mean head, lr=0.001]  inner-val AUC 0.554  test AUC 0.570
+M4 YAMNet + BiLSTM [mean head, lr=0.0003]  inner-val AUC 0.556  test AUC 0.581
+M4 YAMNet + BiLSTM [max head, lr=0.001]  inner-val AUC 0.543  test AUC 0.537
+M4 YAMNet + BiLSTM [max head, lr=0.0003]  inner-val AUC 0.545  test AUC 0.548
+==> M4 YAMNet + BiLSTM selected [bilstm head, lr=0.001]: AUC 0.55 +/- 0.04

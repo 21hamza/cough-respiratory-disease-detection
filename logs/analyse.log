@@ -1,0 +1,8 @@
+M1 MFCC + SVM          OOF AUC 0.600 CI [0.543, 0.66]  acc 59.45%  sens 0.62  spec 0.57
+M2 2D-CNN              OOF AUC 0.485 CI [0.421, 0.551]  acc 47.87%  sens 0.46  spec 0.5  dAUC vs M1 -0.116 CI [-0.199, -0.032]
+M3 CNN–LSTM            OOF AUC 0.549 CI [0.485, 0.611]  acc 53.05%  sens 0.45  spec 0.62  dAUC vs M1 -0.052 CI [-0.141, 0.034]
+M4 YAMNet + BiLSTM     OOF AUC 0.557 CI [0.497, 0.619]  acc 54.57%  sens 0.61  spec 0.48  dAUC vs M1 -0.043 CI [-0.132, 0.044]
+Average of M1-M4       OOF AUC 0.594 CI [0.532, 0.659]  acc 56.4%  sens 0.49  spec 0.63  dAUC vs M1 -0.006 CI [-0.062, 0.051]
+sensitivity by severity: {"positive_asymp": {"m1": {"n": 28, "rate": 0.57}, "m2": {"n": 28, "rate": 0.43}, "m3": {"n": 28, "rate": 0.54}, "m4": {"n": 28, "rate": 0.75}, "ens": {"n": 28, "rate": 0.5}}, "positive_mild": {"m1": {"n": 97, "rate": 0.63}, "m2": {"n": 97, "rate": 0.43}, "m3": {"n": 97, "rate": 0.38}, "m4": {"n": 97, "rate": 0.55}, "ens": {"n": 97, "rate": 0.47}}, "positive_moderate": {"m1": {"n": 39, "rate": 0.62}, "m2": {"n": 39, "rate": 0.54}, "m3": {"n": 39, "rate": 0.54}, "m4": {"n": 39, "rate": 0.67}, "ens": {"n": 39, "rate": 0.54}}}
+overlap: {'all_correct': 32, 'all_wrong': 21, 'histogram': {0: 32, 1: 88, 2: 126, 3: 61, 4: 21}, 'kappa': {'m1-m2': 0.06, 'm1-m3': -0.01, 'm1-m4': 0.06, 'm2-m3': -0.19, 'm2-m4': 0.03, 'm3-m4': 0.27}}
+hard vs easy: {'n_hard': 82, 'n_easy': 120, 'active_duration_s': {'hard': 4.98, 'easy': 4.84}, 'level_db': {'hard': -21.1, 'easy': -21.3}, 'covid_share': {'hard': 0.52, 'easy': 0.53}}

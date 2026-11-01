@@ -1,0 +1,13 @@
+50/328
+100/328
+150/328
+200/328
+250/328
+300/328
+embeddings: (328, 8, 1024) 
+most frequent YAMNet top class:
+Cough      123
+Silence    107
+Speech      57
+Plop        25
+Sigh         6

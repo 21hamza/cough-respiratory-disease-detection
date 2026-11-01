@@ -1,0 +1,48 @@
+== M1 MFCC + SVM [C=10.0, gamma=0.001] | train 229  val 49  test 50
+   accuracy 62.0%  AUC 0.675  sens 0.72  spec 0.52  macro-F1 0.62  cm [[13, 12], [7, 18]]
+== M2 2D-CNN [avg pooling, lr=0.001] | train 229  val 49  test 50
+  epoch  1  train 0.701  val 0.698  (8s)
+  epoch  2  train 0.690  val 0.701  (16s)
+  epoch  3  train 0.692  val 0.695  (24s)
+  epoch  4  train 0.680  val 0.688  (34s)
+  epoch  5  train 0.678  val 0.766  (42s)
+  epoch  6  train 0.677  val 0.747  (51s)
+  epoch  7  train 0.674  val 0.716  (59s)
+  epoch  8  train 0.686  val 0.713  (68s)
+  epoch  9  train 0.681  val 0.700  (76s)
+  epoch 10  train 0.683  val 0.725  (85s)
+  epoch 11  train 0.685  val 0.701  (93s)
+  epoch 12  train 0.690  val 0.702  (101s)
+   accuracy 48.0%  AUC 0.483  sens 0.64  spec 0.32  macro-F1 0.47  cm [[8, 17], [9, 16]]
+== M3 CNN–LSTM [lr=0.001, SpecAugment=off] | train 229  val 49  test 50
+  epoch  1  train 0.700  val 0.687  (12s)
+  epoch  2  train 0.700  val 0.694  (24s)
+  epoch  3  train 0.694  val 0.680  (36s)
+  epoch  4  train 0.695  val 0.682  (48s)
+  epoch  5  train 0.683  val 0.684  (61s)
+  epoch  6  train 0.691  val 0.693  (72s)
+  epoch  7  train 0.699  val 0.682  (84s)
+  epoch  8  train 0.680  val 0.672  (95s)
+  epoch  9  train 0.678  val 0.676  (107s)
+  epoch 10  train 0.678  val 0.641  (119s)
+  epoch 11  train 0.678  val 0.663  (131s)
+  epoch 12  train 0.671  val 0.660  (141s)
+  epoch 13  train 0.671  val 0.726  (152s)
+  epoch 14  train 0.638  val 0.699  (164s)
+  epoch 15  train 0.625  val 0.802  (175s)
+  epoch 16  train 0.677  val 0.658  (192s)
+  epoch 17  train 0.615  val 0.677  (213s)
+  epoch 18  train 0.655  val 0.744  (234s)
+   accuracy 66.0%  AUC 0.669  sens 0.52  spec 0.8  macro-F1 0.65  cm [[20, 5], [12, 13]]
+== M4 YAMNet + BiLSTM [bilstm head, lr=0.001] | train 229  val 49  test 50
+  epoch  1  train 0.697  val 0.707  (1s)
+  epoch  2  train 0.676  val 0.706  (1s)
+  epoch  3  train 0.660  val 0.725  (2s)
+  epoch  4  train 0.635  val 0.806  (2s)
+  epoch  5  train 0.629  val 0.775  (3s)
+  epoch  6  train 0.648  val 0.812  (4s)
+  epoch  7  train 0.647  val 0.719  (4s)
+  epoch  8  train 0.597  val 0.787  (5s)
+  epoch  9  train 0.594  val 0.800  (5s)
+  epoch 10  train 0.587  val 0.927  (6s)
+   accuracy 50.0%  AUC 0.434  sens 0.52  spec 0.48  macro-F1 0.5  cm [[12, 13], [12, 13]]

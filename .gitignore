@@ -1,0 +1,7 @@
+data/raw/
+data/coswara_repo/
+data/processed/mels.npy
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+.DS_Store

@@ -1,0 +1,38 @@
+== M1 MFCC + SVM [C=1.0, gamma=scale] | train 229  val 49  test 50
+   accuracy 66.0%  AUC 0.741  sens 0.6  spec 0.72  macro-F1 0.66  cm [[18, 7], [10, 15]]
+== M2 2D-CNN [avg pooling, lr=0.001] | train 229  val 49  test 50
+  epoch  1  train 0.694  val 0.694  (13s)
+  epoch  2  train 0.690  val 0.701  (42s)
+  epoch  3  train 0.690  val 0.696  (73s)
+  epoch  4  train 0.689  val 0.705  (105s)
+  epoch  5  train 0.686  val 0.710  (136s)
+  epoch  6  train 0.691  val 0.707  (150s)
+  epoch  7  train 0.668  val 0.714  (161s)
+  epoch  8  train 0.680  val 0.715  (172s)
+  epoch  9  train 0.675  val 0.710  (183s)
+   accuracy 40.0%  AUC 0.472  sens 0.12  spec 0.68  macro-F1 0.35  cm [[17, 8], [22, 3]]
+== M3 CNN–LSTM [lr=0.001, SpecAugment=off] | train 229  val 49  test 50
+  epoch  1  train 0.696  val 0.701  (13s)
+  epoch  2  train 0.711  val 0.691  (25s)
+  epoch  3  train 0.688  val 0.683  (37s)
+  epoch  4  train 0.694  val 0.690  (49s)
+  epoch  5  train 0.691  val 0.683  (62s)
+  epoch  6  train 0.683  val 0.686  (74s)
+  epoch  7  train 0.685  val 0.685  (86s)
+  epoch  8  train 0.686  val 0.675  (99s)
+  epoch  9  train 0.676  val 0.675  (111s)
+  epoch 10  train 0.685  val 0.662  (124s)
+  epoch 11  train 0.667  val 0.670  (137s)
+  epoch 12  train 0.645  val 0.684  (150s)
+  epoch 13  train 0.624  val 0.685  (164s)
+  epoch 14  train 0.653  val 0.664  (177s)
+  epoch 15  train 0.649  val 0.619  (191s)
+  epoch 16  train 0.631  val 0.661  (205s)
+  epoch 17  train 0.600  val 0.653  (218s)
+  epoch 18  train 0.644  val 0.753  (232s)
+  epoch 19  train 0.612  val 0.703  (245s)
+  epoch 20  train 0.625  val 0.680  (258s)
+  epoch 21  train 0.590  val 0.681  (273s)
+  epoch 22  train 0.575  val 0.748  (287s)
+  epoch 23  train 0.521  val 0.688  (301s)
+   accuracy 70.0%  AUC 0.776  sens 0.6  spec 0.8  macro-F1 0.7  cm [[20, 5], [10, 15]]
