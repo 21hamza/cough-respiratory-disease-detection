@@ -7,4 +7,7 @@ scikit-learn>=1.4
 numpy>=1.26
 pandas>=2.0
 matplotlib>=3.8
+<<<<<<< HEAD
 ai-edge-litert>=1.0        # runs the pretrained YAMNet (.tflite) for M4
+=======
+>>>>>>> 48a7402ce91ad14f285b2deb4135d2c41cf4cca7

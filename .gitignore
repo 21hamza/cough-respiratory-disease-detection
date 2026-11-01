@@ -1,7 +1,14 @@
+<<<<<<< HEAD
 data/raw/
 data/coswara_repo/
 data/processed/mels.npy
 __pycache__/
 *.pyc
+=======
+data/
+__pycache__/
+*.pyc
+*.pt
+>>>>>>> 48a7402ce91ad14f285b2deb4135d2c41cf4cca7
 .ipynb_checkpoints/
 .DS_Store
